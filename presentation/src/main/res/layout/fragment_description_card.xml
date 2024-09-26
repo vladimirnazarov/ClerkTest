@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.vnazarov.presentation.description.pager.DescriptionCardViewModel"/>
+
+        <import type="com.vnazarov.presentation.util.BindingAdapters"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/description_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@{viewModel.descriptionCardTitle}"
+            android:textSize="@dimen/description_card_title"
+            android:textStyle="bold"
+            android:textColor="@color/theme_text"
+
+            android:gravity="center"
+
+            android:layout_marginHorizontal="@dimen/description_card_text_margin_horizontal"
+            android:layout_marginTop="@dimen/description_card_text_margin_vertical"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/description_card_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_item_favourite"
+            android:contentDescription="@string/item_card_favourite_description"
+
+            android:visibility="@{viewModel.isFavourite}"
+
+            android:layout_marginTop="@dimen/description_card_margin_vertical_normal"
+
+            app:layout_constraintTop_toBottomOf="@id/description_card_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/description_card_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@string/description_card_image_description"
+
+            app:layout_constraintVertical_bias="@dimen/description_card_image_bias"
+
+            app:layout_constraintTop_toBottomOf="@id/description_card_favourite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/description_card_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@{viewModel.descriptionCardBody}"
+            android:textSize="@dimen/description_card_body"
+            android:textStyle="bold"
+            android:textColor="@color/theme_ripple"
+
+            android:gravity="center"
+
+            android:layout_marginVertical="@dimen/description_card_text_margin_vertical"
+            android:layout_marginHorizontal="@dimen/description_card_text_margin_horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/description_card_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/description_card_add_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/background_item_card"
+
+            android:layout_marginHorizontal="@dimen/description_card_margin_horizontal"
+            android:layout_marginTop="@dimen/description_card_margin_vertical_large"
+
+            app:layout_constraintTop_toBottomOf="@id/description_card_body"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/description_card_add_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@{viewModel.buttonText}"
+                android:textSize="@dimen/description_card_body"
+                android:textColor="@color/theme_ripple"
+
+                android:gravity="center"
+
+                android:layout_margin="@dimen/description_card_button_text_margin"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/description_card_add_action"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:onClick="@{viewModel.buttonAction}"
+                android:background="@drawable/ripple_item_card"
+
+                tools:ignore="ContentDescription"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Toolbar
+    <dimen name="toolbar_title">22sp</dimen>
+    <dimen name="toolbar_title_margin">24dp</dimen>
+
+    <dimen name="toolbar_tab_text">14dp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="toolbar_item_margin_vertical">10dp</dimen>
+    <dimen name="toolbar_item_margin_horizontal">12dp</dimen>
+    <dimen name="toolbar_icon_padding">8dp</dimen>
+
+    //Common
+    <dimen name="icon_size_normal">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+
+    //Progress
+    <dimen name="progress_bar_size">60dp</dimen>
+    <dimen name="progress_holder_bias">0.45</dimen>
+    <dimen name="progress_title">24sp</dimen>
+
+    <dimen name="progress_marginTop">16dp</dimen>
+    <dimen name="progress_marginHorizontal">32dp</dimen>
+
+    //Items
+    <dimen name="item_card_image_width">50dp</dimen>
+    <dimen name="item_card_image_margin_vertical">16dp</dimen>
+    <dimen name="item_card_image_margin_horizontal">16dp</dimen>
+
+    <dimen name="item_card_margin_vertical">8dp</dimen>
+    <dimen name="item_card_margin_horizontal">32dp</dimen>
+
+    <dimen name="item_card_background_corners">16dp</dimen>
+    <dimen name="item_card_background_stroke_width">1dp</dimen>
+    <dimen name="item_card_background_elevation">4dp</dimen>
+
+    <dimen name="item_card_description_margin_horizontal">12dp</dimen>
+    <dimen name="item_card_description_margin_vertical">16dp</dimen>
+    <dimen name="item_card_description_title">14sp</dimen>
+    <dimen name="item_card_description_value">14sp</dimen>
+    <dimen name="item_card_description_text_margin_horizontal">8dp</dimen>
+    <dimen name="item_card_description_text_margin_vertical">8dp</dimen>
+
+    //Description
+    <dimen name="description_card_title">24sp</dimen>
+    <dimen name="description_card_body">20sp</dimen>
+    <dimen name="description_card_text_margin_vertical">32dp</dimen>
+    <dimen name="description_card_text_margin_horizontal">32dp</dimen>
+    <dimen name="description_card_button_text_margin">12dp</dimen>
+    <dimen name="description_card_image_bias">0.1</dimen>
+
+    <dimen name="description_card_margin_horizontal">64dp</dimen>
+    <dimen name="description_card_margin_vertical_large">32dp</dimen>
+    <dimen name="description_card_margin_vertical_normal">16dp</dimen>
+
+    //Dialog
+    <dimen name="dialog_margin_horizontal">32dp</dimen>
+    <dimen name="dialog_margin_vertical">16dp</dimen>
+
+    <dimen name="dialog_title">24sp</dimen>
+    <dimen name="dialog_button_text">17sp</dimen>
+    <dimen name="dialog_text_margin_horizontal">24dp</dimen>
+    <dimen name="dialog_text_margin_vertical">8dp</dimen>
+
+    <dimen name="dialog_text_padding_horizontal">12dp</dimen>
+    <dimen name="dialog_text_padding_vertical">8dp</dimen>
+
+    <dimen name="dialog_item_margin_vertical">16dp</dimen>
+
+    <dimen name="dialog_corners">24dp</dimen>
+    <dimen name="dialog_elevation">2dp</dimen>
+
+    <dimen name="dialog_edit_text_cursor_width">2dp</dimen>
+    <dimen name="dialog_edit_text_corners">8dp</dimen>
+    <dimen name="dialog_edit_text_stroke_width">1dp</dimen>
+
+</resources>

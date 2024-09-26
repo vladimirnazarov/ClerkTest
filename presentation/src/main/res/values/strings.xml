@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Theme
+    <string name="app_name">Clerk Test</string>
+
+    //Toolbar
+    <string name="toolbar_cards_title">Cards</string>
+    <string name="toolbar_description_title">Description</string>
+
+    <string name="toolbar_all_cards_title">All cards</string>
+    <string name="toolbar_favourite_title">Favourite</string>
+
+    <string name="toolbar_search_description">Search</string>
+    <string name="toolbar_filter_description">Filter</string>
+    <string name="toolbar_back_description">Move back</string>
+
+    //Progress
+    <string name="progress_title">Items are loading…</string>
+
+    //Items
+    <string name="item_card_image_description">Card image</string>
+    <string name="item_card_favourite_description">This card is favourite</string>
+    <string name="item_card_description_name">Name:</string>
+    <string name="item_card_description_class">Class:</string>
+    <string name="item_card_description_description">Description:</string>
+    <string name="item_card_description_cost">Cost:</string>
+
+    //Description
+    <string name="description_card_image_description">Description card image</string>
+
+    //Dialog
+    <string name="sort_by">Sort by</string>
+    <string name="sort_by_class_up">Sort by class (from A to Z)</string>
+    <string name="sort_by_class_down">Sort by class (from Z to A)</string>
+    <string name="sort_by_cost_up">Sort by cost (from low to high)</string>
+    <string name="sort_by_cost_down">Sort by cost (from high to low)</string>
+
+    <string name="search">Search card</string>
+    <string name="search_hint">Enter card name</string>
+    <string name="card_not_found">Card not found</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Theme
+    <color name="theme_color_background">#F5F5F5</color>
+    <color name="theme_status_bar">#B1A27A</color>
+    <color name="theme_navigation_bar">#F5F5F5</color>
+    <color name="theme_ripple">#80999385</color>
+    <color name="theme_text">#353232</color>
+
+    //Toolbar
+    <color name="toolbar_background">#BFB294</color>
+
+    <color name="toolbar_item">#353232</color>
+    <color name="toolbar_icon_ripple">#59949494</color>
+
+    //Progress
+    <color name="progress_background">@color/theme_text</color>
+    <color name="progress_hint">#73353232</color>
+
+    //Items
+    <color name="item_card_background_stroke">#353232</color>
+    <color name="item_card_favourite">#E9D83C</color>
+
+    //Dialog
+    <color name="dialog_icon">#353232</color>
+    <color name="dialog_search_hint">#A6A0A0</color>
+    <color name="dialog_edit_text_highlight">#4D353232</color>
+
+</resources>

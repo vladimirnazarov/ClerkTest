@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Theme
+    <style name="Theme.ClerkTest" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:colorBackground">@color/theme_color_background</item>
+
+        <item name="android:statusBarColor">@color/theme_status_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:navigationBarColor">@color/theme_navigation_bar</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+    </style>
+
+    //Toolbar
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Button">
+
+        <item name="android:textSize">@dimen/toolbar_tab_text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">2</item>
+
+    </style>
+
+    //Edit Text
+    <style name="EditTextTheme" parent="Theme.ClerkTest">
+
+        <item name="colorAccent">@color/theme_text</item>
+
+    </style>
+
+</resources>

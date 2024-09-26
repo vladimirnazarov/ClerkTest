@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/description_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/toolbar_background"
+        android:elevation="@dimen/toolbar_elevation"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/description_toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_back"
+            android:background="@drawable/ripple_rounded"
+            android:contentDescription="@string/toolbar_back_description"
+
+            android:padding="@dimen/toolbar_icon_padding"
+
+            android:layout_marginVertical="@dimen/toolbar_item_margin_vertical"
+            android:layout_marginStart="@dimen/toolbar_item_margin_horizontal"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/description_toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="@string/toolbar_description_title"
+            android:textColor="@color/toolbar_item"
+            android:textSize="@dimen/toolbar_title"
+            android:textStyle="bold"
+
+            android:layout_marginHorizontal="@dimen/toolbar_title_margin"
+
+            app:layout_constraintStart_toEndOf="@id/description_toolbar_back"
+            app:layout_constraintTop_toTopOf="@id/description_toolbar_back"
+            app:layout_constraintBottom_toBottomOf="@id/description_toolbar_back"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/description_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toBottomOf="@id/description_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

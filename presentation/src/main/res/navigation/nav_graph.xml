@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentCards">
+
+    <fragment
+        android:id="@+id/fragmentCards"
+        android:name="com.vnazarov.presentation.cards.FragmentCards"
+        android:label="FragmentCards">
+
+        <action
+            android:id="@+id/action_fragmentCards_to_fragmentDescription"
+            app:destination="@id/fragmentDescription"
+
+            app:enterAnim="@anim/nav_enter"
+            app:exitAnim="@anim/nav_exit"
+            app:popEnterAnim="@anim/nav_pop_enter"
+            app:popExitAnim="@anim/nav_pop_exit"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentDescription"
+        android:name="com.vnazarov.presentation.description.FragmentDescription"
+        android:label="FragmentDescription"/>
+
+</navigation>

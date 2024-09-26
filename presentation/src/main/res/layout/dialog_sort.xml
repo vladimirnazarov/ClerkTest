@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:ignore="ContentDescription"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialog_sort_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/background_dialog"
+        android:elevation="@dimen/dialog_elevation"
+
+        android:layout_marginVertical="@dimen/dialog_margin_vertical"
+        android:layout_marginHorizontal="@dimen/dialog_margin_horizontal"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/dialog_sort_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/sort_by"
+            android:textSize="@dimen/dialog_title"
+            android:textColor="@color/theme_text"
+            android:textStyle="bold"
+
+            android:layout_marginHorizontal="@dimen/dialog_text_margin_horizontal"
+            android:layout_marginTop="@dimen/dialog_item_margin_vertical"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialog_sort_by_class_up_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dialog_item_margin_vertical"
+
+            app:layout_constraintTop_toBottomOf="@id/dialog_sort_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/dialog_sort_by_class_up_action_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/ic_sort_list"
+
+                android:layout_marginEnd="@dimen/dialog_text_margin_horizontal"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/dialog_sort_by_class_up_action_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:text="@string/sort_by_class_up"
+                android:textSize="@dimen/dialog_button_text"
+                android:textColor="@color/theme_text"
+
+                android:layout_marginVertical="@dimen/dialog_text_margin_vertical"
+                android:layout_marginHorizontal="@dimen/dialog_text_margin_horizontal"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/dialog_sort_by_class_up_action_icon"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/dialog_sort_by_class_up_action"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/ripple_dialog_button"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialog_sort_by_class_down_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/dialog_sort_by_class_up_holder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/dialog_sort_by_class_down_action_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/ic_sort_list"
+
+                android:layout_marginEnd="@dimen/dialog_text_margin_horizontal"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/dialog_sort_by_class_down_action_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:text="@string/sort_by_class_down"
+                android:textSize="@dimen/dialog_button_text"
+                android:textColor="@color/theme_text"
+
+                android:layout_marginVertical="@dimen/dialog_text_margin_vertical"
+                android:layout_marginHorizontal="@dimen/dialog_text_margin_horizontal"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/dialog_sort_by_class_down_action_icon"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/dialog_sort_by_class_down_action"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/ripple_dialog_button"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialog_sort_by_cost_up_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/dialog_sort_by_class_down_holder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/dialog_sort_by_cost_up_action_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/ic_sort_list"
+
+                android:layout_marginEnd="@dimen/dialog_text_margin_horizontal"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/dialog_sort_by_cost_up_action_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:text="@string/sort_by_cost_up"
+                android:textSize="@dimen/dialog_button_text"
+                android:textColor="@color/theme_text"
+
+                android:layout_marginVertical="@dimen/dialog_text_margin_vertical"
+                android:layout_marginHorizontal="@dimen/dialog_text_margin_horizontal"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/dialog_sort_by_cost_up_action_icon"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/dialog_sort_by_cost_up_action"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/ripple_dialog_button"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialog_sort_by_cost_down_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/dialog_sort_by_cost_up_holder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/dialog_sort_by_cost_down_action_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/ic_sort_list"
+
+                android:layout_marginEnd="@dimen/dialog_text_margin_horizontal"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/dialog_sort_by_cost_down_action_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:text="@string/sort_by_cost_down"
+                android:textSize="@dimen/dialog_button_text"
+                android:textColor="@color/theme_text"
+
+                android:layout_marginVertical="@dimen/dialog_text_margin_vertical"
+                android:layout_marginHorizontal="@dimen/dialog_text_margin_horizontal"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/dialog_sort_by_cost_down_action_icon"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/dialog_sort_by_cost_down_action"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/ripple_dialog_button"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_item_margin_vertical"
+
+            app:layout_constraintTop_toBottomOf="@id/dialog_sort_by_cost_down_holder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
